@@ -41,13 +41,13 @@ namespace OneDrive_Enum
             }
             catch (Exception ex)
             {
-                if (ex.Message.Contains("404"))
+                if (ex.Message.Contains("403"))
                 {
-                    textBox1.Text = "USER " + txtusername.Text + " IS NOT VALID";
+                 textBox1.Text = "USER " + txtusername.Text + " IS VALID";
                 }
                 else
                 {
-                    textBox1.Text = "USER " + txtusername.Text + " IS VALID";
+                textBox1.Text = "USER " + txtusername.Text + " IS NOT VALID";
                 }
             }
            
